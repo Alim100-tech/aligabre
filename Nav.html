@@ -134,6 +134,14 @@
        -o-transition-delay: calc(.5s * var(--i));
       }
      }
+       .section, .hero{
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #000;}
   </style>
 </head>
 <body>
@@ -153,5 +161,10 @@
 
        </nav>
   </header>
+ <section class="hero">
+   <h1>Welcome</h1>
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+ </section>
 </body>
 </html>
