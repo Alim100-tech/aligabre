@@ -18,7 +18,7 @@
       font-family: "poppins";
     }
     body{
-      height:2000px;
+      height: 800px;
       min-height: 100vh;
       background-color: rgb(25, 60, 75);
      
@@ -29,6 +29,7 @@
       left: 0;
       width: 100%;
       padding: 1.3rem 10%;
+      background-color: rgb(25, 60, 75);
      /* */
       display: flex;
       justify-content: space-between;
@@ -42,8 +43,8 @@
         top: 0;
         left: 0;
         width: 100%;
-        height: 00%;
-        background-color: rgba(0, 0, 0, 1);
+        height: 100%;
+        background-color: rgb(25, 60, 75);
         backdrop-filter: blur(50px);
         z-index: -1;
       }
@@ -109,7 +110,7 @@
         left: 0;
         width: 100%;
         height: 0;
-        background-color: rgba(0, 0, 0, 1);
+        background-color: rgb(25, 60, 60);
         backdrop-filter: blur(50px);
         box-shadow: 0 .5rem 1rem rgb(37, 32, 32);
         overflow: hidden;
@@ -135,19 +136,38 @@
        -o-transition-delay: calc(.5s * var(--i));
       }
      }
-       section{
-  height: calc(100vh - 100px);
+     section{
+  height: calc(100vh - 60px);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   text-align: center;
-  color: #fff;}
+  color: #fff;
+}
+.wrapper{
+  background: white;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  width: 400px;
+  height: 300px;
+  border-radius: 14px;
+  background-image: url(thumbnail_scan0001.jpg) ;
+}
+.container{
+  background: white;
+  font-size: 20px;
+  font-weight: 700;
+  color: black;
+  width: 400px;
+  height: 300px;
+}
   </style>
 </head>
 <body>
   <header class="header">
-       <a href="" class="logo">Aligabre</a>
+       <a href="" class="logo">Aligabeire</a>
        <input type="checkbox" id="check">
        <label for="check" class="icons">
         <i class='bx bx-menu' id="menu-icon"></i>
@@ -157,16 +177,21 @@
             <a href="#" style="--i:0">Home</a>
             <a href="#" style="--i:1">About</a>
             <a href="#" style="--i:2">Features</a>
-            <a href="#" style="--i:3">Services</a>
-            <a href="#" style="--i:4">Contact</a>
+            <a href="#" style="--i:3">Contact</a>
+            <a href="#" style="--i:4">Services</a>
+
 
        </nav>
   </header>
- <section class="hero">
-   <h1>Welcome</h1>
-  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
-sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-
- </section>
+  
+  <section class="hero" >
+    <h1>Welcome</h1>
+    <div class="wrapper">
+        </div>
+        <div class="container"><p>Atariisho Aamina Dhudi Rag Badan Mustaqbalkooda waa ku ciyaartay  <br>
+          Laakin aniga waad igu soo Qaldantay Waana Inaad ka shalaaysaa si <br>
+          Nin danbe aadan ugu qaldamin Yaa Qaldaan bintu Qaldaan.
+          Waa Balan In Shaqada aad ka shaqeeyse Qurunka Ah Aad Joojiso</p>  </div>
+  </section>
 </body>
 </html>
