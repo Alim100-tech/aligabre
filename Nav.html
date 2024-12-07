@@ -50,7 +50,7 @@
       }
       .header::after{
         content: "";
-        position: absolute;
+        position: fixed;
         top: 0;
         left: -100%;
         width: 100%;
@@ -116,6 +116,10 @@
         overflow: hidden;
         transition: .3s;
       }
+       a:hover{
+        background: gray;
+        width: 100%;
+      }
       #check:checked~.navbar{
         height: 17.7rem;
       }
@@ -153,7 +157,7 @@
   width: 400px;
   height: 300px;
   border-radius: 14px;
-  background-image: url(thumbnail_scan0001.jpg) ;
+  border: 3px blue solid;
 }
 .container{
   background: white;
@@ -162,6 +166,7 @@
   color: black;
   width: 400px;
   height: 300px;
+  border: 5px rgb(9, 9, 216) solid;
 }
   </style>
 </head>
@@ -188,10 +193,7 @@
     <h1>Welcome</h1>
     <div class="wrapper">
         </div>
-        <div class="container"><p>Atariisho Aamina Dhudi Rag Badan Mustaqbalkooda waa ku ciyaartay  <br>
-          Laakin aniga waad igu soo Qaldantay Waana Inaad ka shalaaysaa si <br>
-          Nin danbe aadan ugu qaldamin Yaa Qaldaan bintu Qaldaan.
-          Waa Balan In Shaqada aad ka shaqeeyse Qurunka Ah Aad Joojiso</p>  </div>
+        <div class="container"><p></p>  </div>
   </section>
 </body>
 </html>
