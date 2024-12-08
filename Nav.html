@@ -28,15 +28,15 @@
       top: 0;
       left: 0;
       width: 100%;
-      padding: 1.3rem 10%;
+      padding: 1.1rem 5%;
       background-color: rgb(25, 60, 75);
      /* */
       display: flex;
       justify-content: space-between;
       align-items: center;
       z-index: 100;
-      
     }
+   
     .header::before {
         content: "";
         position: absolute;
@@ -67,12 +67,19 @@
       text-decoration: none;
       font-weight: 700;
     }
+    .logo:hover{
+      color:#42c1e8 ;
+    }
+
     .navbar a {
       font-size: 1.15rem;
       color: #fff;
       text-decoration: none;
       font-weight: 500;
       margin-left: 2.5rem;
+    }
+    .navbar a:hover {
+      color:#42c1e8 ;
     }
     #check{
       display: none;
@@ -148,6 +155,7 @@
   justify-content: center;
   text-align: center;
   color: #fff;
+  line-height: 25px;
 }
 .wrapper{
   background: white;
@@ -168,6 +176,50 @@
   height: 300px;
   border: 5px rgb(9, 9, 216) solid;
 }
+main, .home{
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center ;
+  text-align: center;
+  color: #fff;
+  line-height: 38px;
+}
+.btn{
+padding: 8px 26px;
+background-color: #42c1e8;
+border: white 2px solid;
+color: black;
+text-decoration: none;
+border-radius: 14px;
+font-size: 18px;
+font-weight: 600;
+}
+.btn1{
+padding: 8px 26px;
+background-color: #42c1e8;
+border: white 2px solid;
+color: #fff;
+text-decoration: none;
+border-radius: 14px;
+font-size: 18px;
+font-weight: 600;
+}
+.btn:hover{
+  background: #000;
+  color: #000;
+  border: #fff 2px solid;
+}
+.btn1:hover{
+  background: #000;
+  color: #fff;
+  border: #fff 2px solid;
+}
+
+span{
+  color: #42c1e8;
+}
   </style>
 </head>
 <body>
@@ -183,16 +235,21 @@
             <a href="#" style="--i:1">About</a>
             <a href="#" style="--i:2">Features</a>
             <a href="#" style="--i:3">Contact</a>
-            <a href="#" style="--i:4">Services</a>
-
-
+            <a href="" class="btn">Get Started</a>
+           
        </nav>
   </header>
-  
+  <main>
   <section class="hero" >
     <h1>Welcome</h1>
    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br>
     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   </section>
+  <div class="Home" >
+    <h1>Hi I'm <span>Ali Gabeire</span></h1>
+    <p>Kusoo Dhawoow Gacmo Furan</p>
+  <a href="" class="btn1">Get Started</a>
+  </div>
+</main>
 </body>
 </html>
